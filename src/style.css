@@ -15,8 +15,12 @@ body {
   padding: 0 5rem;
 }
 
+/* ------------------------
+HEADER
+------------------------ */
+
 header {
-  height: 7rem;
+  height: 8rem;
   background-color: red;
   display: flex;
   align-items: center;
@@ -28,13 +32,40 @@ header {
   background-color: aqua;
   display: flex;
   align-items: center;
+  width: min(20rem, 30vw);
 }
 
 #logo-icon {
-  height: 70%;
+  height: 4rem;
   margin-right: 1rem;
 }
 
 h1 {
   color: #fff;
+}
+
+.header-right {
+  width: min(30rem, 40vw);
+  background-color: aqua;
+  display: flex;
+  gap: 1rem;
+  justify-content: end;
+}
+
+header input[type="search"],
+header input[type="radio"] {
+  height: 2rem;
+  border-radius: 2rem;
+  appearance: none;
+  background-color: transparent;
+  outline: 2px solid #fff;
+}
+
+header input[type="search"] {
+  border: none;
+  flex: auto;
+}
+
+header input[type="radio"] {
+  flex: 0 0 2rem;
 }
