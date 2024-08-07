@@ -1,5 +1,6 @@
 import './style.css';
 import { format, addDays } from 'date-fns';
+import arrow from './assets/arrow.svg';
 import html from './index.html';
 
 const searchButton = document.querySelector('header .search-icon');
@@ -172,7 +173,7 @@ function createHoursInfoData(dayIndex) {
       selectedDayData.hours[i].humidity
     )}</p>
     <div class="hour-wind hide-info hide-b">
-      <img class="hour-wind-direction" data-index="${i}" src="../src/assets/arrow.svg" alt="">
+      <img class="hour-wind-direction" data-index="${i}" src=${arrow} alt="">
       <p class="hour-data">${Math.round(
         selectedDayData.hours[i].windspeed
       )} / ${Math.round(selectedDayData.hours[i].windgust)}</p>
