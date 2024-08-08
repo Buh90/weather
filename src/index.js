@@ -172,7 +172,7 @@ function createHoursInfoData(dayIndex) {
       selectedDayData.hours[i].humidity
     )}</p>
     <div class="hour-wind hide-info hide-b">
-      <img class="hour-wind-direction" data-index="${i}" src=${arrow} alt="">
+      <img class="hour-wind-direction" data-index="${i}" src="./assets/arrow.svg" alt="">
       <p class="hour-data">${Math.round(
         selectedDayData.hours[i].windspeed
       )} / ${Math.round(selectedDayData.hours[i].windgust)}</p>
