@@ -74,19 +74,19 @@ function createCurrentField() {
         )}</p>
         <p class="current-temp">${globalAPIData.currentConditions.temp}°C</p>
         <p class="">Percepita ${globalAPIData.currentConditions.feelslike}°</p>
-        <img src="../src/assets/${
+        <img src="./assets/${
           globalAPIData.currentConditions.icon
         }.svg" alt="" class="current-day-icon" />
         <div class="current-info-box">
           <div class="current-info">
-            <img class="" src="../src/assets/water.svg" alt="" />
+            <img class="" src="./assets/water.svg" alt="" />
             <p>${Math.round(globalAPIData.currentConditions.humidity)}%</p>
-            <img class="" src="../src/assets/cloud.svg" alt="" />
+            <img class="" src="./assets/cloud.svg" alt="" />
             <p>${Math.round(globalAPIData.currentConditions.cloudcover)}%</p>
           </div>
           <div class="current-wind-box">
             <div class="wind-circle">
-              <img src="../src/assets/winddir.svg" alt="" />
+              <img src="./assets/winddir.svg" alt="" />
             </div>
             <p>${Math.round(
               globalAPIData.currentConditions.windspeed
@@ -111,11 +111,11 @@ function createForecastDaysField() {
     </p>
         <p class="date">${format(addDays(new Date(), i), 'dd/MM/yyyy')}</p>
         
-        <img class="day-icon" src="../src/assets/${setDayIcon(i)}.svg" alt="" />
+        <img class="day-icon" src="./assets/${setDayIcon(i)}.svg" alt="" />
         <div class="icon-text">
-          <img src="../src/assets/min.svg" alt="" />
+          <img src="./assets/min.svg" alt="" />
           <p class="min">${Math.round(globalAPIData.days[i].tempmin)}°</p>
-          <img src="../src/assets/max.svg" alt="" />
+          <img src="./assets/max.svg" alt="" />
           <p class="max">${Math.round(globalAPIData.days[i].tempmax)}°</p>
         </div>`;
     dayField.addEventListener('click', function (e) {
@@ -150,7 +150,7 @@ function createHoursInfoData(dayIndex) {
   for (i; i < 24; i++) {
     hoursContainer.innerHTML += `<p class="hour-data hour">${i}:00</p>
     <div class="hour-icon">
-      <img src="../src/assets/${
+      <img src="./assets/${
         selectedDayData.hours[i].icon
       }.svg" class="hour-data"></img>
     </div>
