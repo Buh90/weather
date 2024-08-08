@@ -6,7 +6,8 @@
   "scripts": {
     "watch": "webpack --watch",
     "start": "webpack serve --open --config webpack.dev.js",
-    "build": "webpack --config webpack.dev.js"
+    "build": "webpack --config webpack.dev.js",
+    "distpage": "git subtree push --prefix dist origin gh-pages"
   },
   "keywords": [],
   "author": "",

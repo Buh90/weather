@@ -1,6 +1,5 @@
 import './style.css';
 import { format, addDays } from 'date-fns';
-import arrow from './assets/arrow.svg';
 import html from './index.html';
 
 const searchButton = document.querySelector('header .search-icon');
